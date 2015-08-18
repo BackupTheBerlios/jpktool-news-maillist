@@ -1,0 +1,57 @@
+From jpktool at comhem.se  Thu Mar  9 00:15:18 2006
+From: jpktool at comhem.se (Jari Kanerva)
+Date: Thu, 9 Mar 2006 00:15:18 +0100
+Subject: [Jpktool-news] jpktool 0.5.1 released
+Message-ID: <200603090015.18861.jpktool@comhem.se>
+
+0.5.1 2006-03-08
+	Bugfix: jpktool would crash if you don't run current. Thanks H?kan.
+	Bugfix: jpktool now chwcks if there is something to do before asking
+		for your root password. Forgot that in 0.5.0
+	jpktool -c do not work for now. That might be removed later. jpktool
+		don't install anything anyway so you always have the opportunity to
+		choose not to upgrade or install before jpkhandy starts.
+------------------------------------------------------------------------
+0.5.0 2006-03-03
+	--source is turned off in this version. It will propably be back in
+		the next version.
+	Config. jpktool will now search for jpktool.conf in /etc, /usr/etc and
+		/usr/local/etc in that order.
+	Rewrote jpktool again. The package now contains 2 programs jpktool and
+		jpkhandy. jpktool is suposed to run as non-root and search for
+		packages to update, install or remove. When that is done jpktool
+		will ask for your root-password and start jpkhandy. jpkhandy does
+		the downloading and installation/upgrading work. jpkhandy do not use
+		pkgtools. They are built in.
+	Removed WARNROOT. jpktool is now intended to be run as non-root and
+		get root acces only when needed.
+	Bugfix. If the package descripiton was not found jpktool would not
+		tell you anything. Now it tries to download the package.txt file.
+	Bugfix. jpktool only downloaded the slackware/PACKAGES.TXT.
+
+/Jari
+
+-- 
+Visit jpktool at:       http://jpktool.berlios.de/
+Visit the project page: http://developer.berlios.de/projects/jpktool/
+
+
+From jpktool-news-admin at lists.berlios.de  Sat Mar 11 03:59:46 2006
+From: jpktool-news-admin at lists.berlios.de (jpktool-news-admin at lists.berlios.de)
+Date: Sat, 11 Mar 2006 03:59:46 +0100
+Subject: [Jpktool-news] jpktool 0.5.2 Released.
+Message-ID: <200603110359.47592.jpktool@comhem.se>
+
+Changelog:
+bugfix: The getfile to jpkhandy would sometimes get messed up and jpkhandy 
+could not download any files.
+bugfix: If there was a new "extra/PACKAGES.TXT" available jpktool would also 
+try to download the dependency file (does not exist yet).
+
+/Jari
+
+-- 
+Visit jpktool at:       http://jpktool.berlios.de/
+Visit the project page: http://developer.berlios.de/projects/jpktool/
+
+

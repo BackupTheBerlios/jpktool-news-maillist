@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Jpktool-news] jpktool 0.5.1 released
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jpktool-news/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:jpktool-news%40lists.berlios.de?Subject=Re%3A%20%5BJpktool-news%5D%20jpktool%200.5.1%20released&In-Reply-To=%3C200603090015.18861.jpktool%40comhem.se%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000001.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Jpktool-news] jpktool 0.5.1 released</H1>
+    <B>Jari Kanerva</B> 
+    <A HREF="mailto:jpktool-news%40lists.berlios.de?Subject=Re%3A%20%5BJpktool-news%5D%20jpktool%200.5.1%20released&In-Reply-To=%3C200603090015.18861.jpktool%40comhem.se%3E"
+       TITLE="[Jpktool-news] jpktool 0.5.1 released">jpktool at comhem.se
+       </A><BR>
+    <I>Thu Mar  9 00:15:18 CET 2006</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000001.html">[Jpktool-news] jpktool 0.5.2 Released.
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>0.5.1 2006-03-08
+	Bugfix: jpktool would crash if you don't run current. Thanks H&#229;kan.
+	Bugfix: jpktool now chwcks if there is something to do before asking
+		for your root password. Forgot that in 0.5.0
+	jpktool -c do not work for now. That might be removed later. jpktool
+		don't install anything anyway so you always have the opportunity to
+		choose not to upgrade or install before jpkhandy starts.
+------------------------------------------------------------------------
+0.5.0 2006-03-03
+	--source is turned off in this version. It will propably be back in
+		the next version.
+	Config. jpktool will now search for jpktool.conf in /etc, /usr/etc and
+		/usr/local/etc in that order.
+	Rewrote jpktool again. The package now contains 2 programs jpktool and
+		jpkhandy. jpktool is suposed to run as non-root and search for
+		packages to update, install or remove. When that is done jpktool
+		will ask for your root-password and start jpkhandy. jpkhandy does
+		the downloading and installation/upgrading work. jpkhandy do not use
+		pkgtools. They are built in.
+	Removed WARNROOT. jpktool is now intended to be run as non-root and
+		get root acces only when needed.
+	Bugfix. If the package descripiton was not found jpktool would not
+		tell you anything. Now it tries to download the package.txt file.
+	Bugfix. jpktool only downloaded the slackware/PACKAGES.TXT.
+
+/Jari
+
+-- 
+Visit jpktool at:       <A HREF="http://jpktool.berlios.de/">http://jpktool.berlios.de/</A>
+Visit the project page: <A HREF="http://developer.berlios.de/projects/jpktool/">http://developer.berlios.de/projects/jpktool/</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000001.html">[Jpktool-news] jpktool 0.5.2 Released.
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jpktool-news">More information about the Jpktool-news
+mailing list</a><br>
+</body></html>
